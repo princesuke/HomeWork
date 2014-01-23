@@ -13,15 +13,16 @@
 		F627DC9A188F8CA3005B392F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F627DC98188F8CA3005B392F /* InfoPlist.strings */; };
 		F627DC9C188F8CA3005B392F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F627DC9B188F8CA3005B392F /* main.m */; };
 		F627DCA0188F8CA3005B392F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F627DC9F188F8CA3005B392F /* AppDelegate.m */; };
-		F627DCA3188F8CA3005B392F /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F627DCA1188F8CA3005B392F /* Main_iPhone.storyboard */; };
-		F627DCA6188F8CA3005B392F /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F627DCA4188F8CA3005B392F /* Main_iPad.storyboard */; };
-		F627DCA9188F8CA3005B392F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F627DCA8188F8CA3005B392F /* ViewController.m */; };
 		F627DCAB188F8CA3005B392F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F627DCAA188F8CA3005B392F /* Images.xcassets */; };
 		F627DCB2188F8CA3005B392F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F627DCB1188F8CA3005B392F /* XCTest.framework */; };
 		F627DCB3188F8CA3005B392F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F627DC8F188F8CA3005B392F /* Foundation.framework */; };
 		F627DCB4188F8CA3005B392F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F627DC93188F8CA3005B392F /* UIKit.framework */; };
 		F627DCBC188F8CA3005B392F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F627DCBA188F8CA3005B392F /* InfoPlist.strings */; };
 		F627DCBE188F8CA3005B392F /* HomeWorkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F627DCBD188F8CA3005B392F /* HomeWorkTests.m */; };
+		F6358E891890BDBD00040C69 /* AddPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6358E871890BDBD00040C69 /* AddPersonViewController.m */; };
+		F6358E8A1890BDBD00040C69 /* AddPersonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6358E881890BDBD00040C69 /* AddPersonViewController.xib */; };
+		F6358E8E1890BDE800040C69 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6358E8C1890BDE800040C69 /* HomeViewController.m */; };
+		F6358E8F1890BDE800040C69 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6358E8D1890BDE800040C69 /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,16 +46,18 @@
 		F627DC9D188F8CA3005B392F /* HomeWork-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HomeWork-Prefix.pch"; sourceTree = "<group>"; };
 		F627DC9E188F8CA3005B392F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F627DC9F188F8CA3005B392F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F627DCA2188F8CA3005B392F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		F627DCA5188F8CA3005B392F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		F627DCA7188F8CA3005B392F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F627DCA8188F8CA3005B392F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F627DCAA188F8CA3005B392F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F627DCB0188F8CA3005B392F /* HomeWorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeWorkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F627DCB1188F8CA3005B392F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F627DCB9188F8CA3005B392F /* HomeWorkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HomeWorkTests-Info.plist"; sourceTree = "<group>"; };
 		F627DCBB188F8CA3005B392F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F627DCBD188F8CA3005B392F /* HomeWorkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeWorkTests.m; sourceTree = "<group>"; };
+		F6358E861890BDBD00040C69 /* AddPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPersonViewController.h; sourceTree = "<group>"; };
+		F6358E871890BDBD00040C69 /* AddPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPersonViewController.m; sourceTree = "<group>"; };
+		F6358E881890BDBD00040C69 /* AddPersonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddPersonViewController.xib; sourceTree = "<group>"; };
+		F6358E8B1890BDE800040C69 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		F6358E8C1890BDE800040C69 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		F6358E8D1890BDE800040C69 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,11 +119,13 @@
 			children = (
 				F627DC9E188F8CA3005B392F /* AppDelegate.h */,
 				F627DC9F188F8CA3005B392F /* AppDelegate.m */,
-				F627DCA1188F8CA3005B392F /* Main_iPhone.storyboard */,
-				F627DCA4188F8CA3005B392F /* Main_iPad.storyboard */,
-				F627DCA7188F8CA3005B392F /* ViewController.h */,
-				F627DCA8188F8CA3005B392F /* ViewController.m */,
 				F627DCAA188F8CA3005B392F /* Images.xcassets */,
+				F6358E8B1890BDE800040C69 /* HomeViewController.h */,
+				F6358E8C1890BDE800040C69 /* HomeViewController.m */,
+				F6358E8D1890BDE800040C69 /* HomeViewController.xib */,
+				F6358E861890BDBD00040C69 /* AddPersonViewController.h */,
+				F6358E871890BDBD00040C69 /* AddPersonViewController.m */,
+				F6358E881890BDBD00040C69 /* AddPersonViewController.xib */,
 				F627DC96188F8CA3005B392F /* Supporting Files */,
 			);
 			path = HomeWork;
@@ -231,10 +236,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F627DCA6188F8CA3005B392F /* Main_iPad.storyboard in Resources */,
 				F627DCAB188F8CA3005B392F /* Images.xcassets in Resources */,
-				F627DCA3188F8CA3005B392F /* Main_iPhone.storyboard in Resources */,
 				F627DC9A188F8CA3005B392F /* InfoPlist.strings in Resources */,
+				F6358E8A1890BDBD00040C69 /* AddPersonViewController.xib in Resources */,
+				F6358E8F1890BDE800040C69 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,9 +258,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F627DCA9188F8CA3005B392F /* ViewController.m in Sources */,
 				F627DCA0188F8CA3005B392F /* AppDelegate.m in Sources */,
 				F627DC9C188F8CA3005B392F /* main.m in Sources */,
+				F6358E891890BDBD00040C69 /* AddPersonViewController.m in Sources */,
+				F6358E8E1890BDE800040C69 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,22 +290,6 @@
 				F627DC99188F8CA3005B392F /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		F627DCA1188F8CA3005B392F /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F627DCA2188F8CA3005B392F /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		F627DCA4188F8CA3005B392F /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F627DCA5188F8CA3005B392F /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		F627DCBA188F8CA3005B392F /* InfoPlist.strings */ = {
@@ -474,6 +464,7 @@
 				F627DCC3188F8CA3005B392F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F627DCC4188F8CA3005B392F /* Build configuration list for PBXNativeTarget "HomeWorkTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +473,7 @@
 				F627DCC6188F8CA3005B392F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
