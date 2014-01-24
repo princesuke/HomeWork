@@ -8,8 +8,9 @@
 
 #import "HomeViewController.h"
 #import "AddPersonViewController.h"
+#import "Person.h"
 
-@interface HomeViewController ()
+@interface HomeViewController ()<AddPersonViewControllerDelegate>
 
 @end
 
@@ -32,20 +33,84 @@
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertPerson:)];
 	self.navigationItem.rightBarButtonItem = addButton;
     
+   // NSMutableArray *fullNamePerson = [[NSMutableArray alloc] init];
+    //[fullNamePerson addObject:@"string1"];
+   // [fullNamePerson addObject:@"string2"];
+    //NSString * fullNameText = [NSString stringWithFormat:@"%@ %@", _namePerson, _lastNamePerson];
+    //NSString *test = [randomSelection objectAtIndex:0];
+   // NSLog(@"fullName= %@",fullNameText);
+    /*for (NSNumber *num in fullNamePerson)
+    {        
+        //NSLog(@"%@", num);
+    }*/
+    
+    _fullNamePerson = [NSMutableArray new];
+    
+    _personTable.dataSource = self;
+    _personTable.delegate = self;
+
+}
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+   return _fullNamePerson.count;
+  //  return 2;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    if(cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
+    }
+    
+//    cell.textLabel.text = _fullNamePerson[indexPath.row];
+   
+    Person *temporaryPerson = _fullNamePerson[indexPath.row];
+    NSString * temporaryString = [NSString stringWithFormat:@"%@ %@",temporaryPerson.nameText,temporaryPerson.lastNameText];
+    
+//      cell.textLabel.text =
+    cell.textLabel.text = temporaryString;
+
+    return cell;
     
 }
+
 
 - (void)insertPerson:(id)sender
 {
     AddPersonViewController *addPersonVC = [[AddPersonViewController alloc] initWithNibName:@"AddPersonViewController" bundle:nil];
+    addPersonVC.delegate = self;
     [self.navigationController pushViewController:addPersonVC animated:YES];
 
 }
+
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+- (void)AddPersonViewController:(AddPersonViewController *)addPersonVC gotPerson:(Person *)namePerson
+{
+//    NSString * fullName = [NSString stringWithFormat:@"%@ %@", namePerson.nameText, namePerson.lastNameText];
+    
+    [_fullNamePerson addObject:namePerson];
+    
+    [self.personTable reloadData];
+//    for (NSNumber *num in _fullNamePerson)
+//    {
+//        NSLog(@"%@", num);
+//    }
+  //  NSLog(@"%@",namePerson.nameText);
+    
 }
 
 @end

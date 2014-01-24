@@ -23,6 +23,7 @@
 		F6358E8A1890BDBD00040C69 /* AddPersonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6358E881890BDBD00040C69 /* AddPersonViewController.xib */; };
 		F6358E8E1890BDE800040C69 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6358E8C1890BDE800040C69 /* HomeViewController.m */; };
 		F6358E8F1890BDE800040C69 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6358E8D1890BDE800040C69 /* HomeViewController.xib */; };
+		F6E5AE9818924FC0001E6A91 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E5AE9718924FC0001E6A91 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		F6358E8B1890BDE800040C69 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		F6358E8C1890BDE800040C69 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		F6358E8D1890BDE800040C69 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		F6E5AE9618924FC0001E6A91 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		F6E5AE9718924FC0001E6A91 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,8 @@
 				F6358E871890BDBD00040C69 /* AddPersonViewController.m */,
 				F6358E881890BDBD00040C69 /* AddPersonViewController.xib */,
 				F627DC96188F8CA3005B392F /* Supporting Files */,
+				F6E5AE9618924FC0001E6A91 /* Person.h */,
+				F6E5AE9718924FC0001E6A91 /* Person.m */,
 			);
 			path = HomeWork;
 			sourceTree = "<group>";
@@ -260,6 +265,7 @@
 			files = (
 				F627DCA0188F8CA3005B392F /* AppDelegate.m in Sources */,
 				F627DC9C188F8CA3005B392F /* main.m in Sources */,
+				F6E5AE9818924FC0001E6A91 /* Person.m in Sources */,
 				F6358E891890BDBD00040C69 /* AddPersonViewController.m in Sources */,
 				F6358E8E1890BDE800040C69 /* HomeViewController.m in Sources */,
 			);

@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeViewController : UIViewController
+@interface HomeViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *personTable;
+@property (copy, nonatomic) NSMutableArray *fullNamePerson;
 
 @end
