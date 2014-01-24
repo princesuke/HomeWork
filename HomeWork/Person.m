@@ -11,6 +11,11 @@
 
 @implementation Person
 
+-(NSString *)fullName
+{
+    NSString * temporaryString = [NSString stringWithFormat:@"%@ %@",_nameText,_lastNameText];
+    return temporaryString;
+}
 
 
 @end

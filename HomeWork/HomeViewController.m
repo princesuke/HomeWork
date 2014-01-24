@@ -59,7 +59,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
    return _fullNamePerson.count;
-  //  return 2;
+ 
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -69,13 +69,8 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
     }
     
-//    cell.textLabel.text = _fullNamePerson[indexPath.row];
-   
     Person *temporaryPerson = _fullNamePerson[indexPath.row];
-    NSString * temporaryString = [NSString stringWithFormat:@"%@ %@",temporaryPerson.nameText,temporaryPerson.lastNameText];
-    
-//      cell.textLabel.text =
-    cell.textLabel.text = temporaryString;
+    cell.textLabel.text = [temporaryPerson fullName];
 
     return cell;
     
@@ -100,16 +95,11 @@
 
 - (void)AddPersonViewController:(AddPersonViewController *)addPersonVC gotPerson:(Person *)namePerson
 {
-//    NSString * fullName = [NSString stringWithFormat:@"%@ %@", namePerson.nameText, namePerson.lastNameText];
-    
+ 
     [_fullNamePerson addObject:namePerson];
     
     [self.personTable reloadData];
-//    for (NSNumber *num in _fullNamePerson)
-//    {
-//        NSLog(@"%@", num);
-//    }
-  //  NSLog(@"%@",namePerson.nameText);
+
     
 }
 

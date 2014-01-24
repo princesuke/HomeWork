@@ -13,4 +13,6 @@
 @property (strong, nonatomic) NSString *nameText;
 @property (strong, nonatomic) NSString *lastNameText;
 
+-(NSString *)fullName;
+
 @end
