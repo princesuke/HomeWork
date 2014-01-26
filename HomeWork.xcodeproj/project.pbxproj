@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17536DF0189564410067B71A /* DeletePersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17536DEE189564410067B71A /* DeletePersonViewController.m */; };
+		17536DF1189564410067B71A /* DeletePersonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17536DEF189564410067B71A /* DeletePersonViewController.xib */; };
 		F627DC90188F8CA3005B392F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F627DC8F188F8CA3005B392F /* Foundation.framework */; };
 		F627DC92188F8CA3005B392F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F627DC91188F8CA3005B392F /* CoreGraphics.framework */; };
 		F627DC94188F8CA3005B392F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F627DC93188F8CA3005B392F /* UIKit.framework */; };
@@ -37,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17536DED189564410067B71A /* DeletePersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeletePersonViewController.h; sourceTree = "<group>"; };
+		17536DEE189564410067B71A /* DeletePersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeletePersonViewController.m; sourceTree = "<group>"; };
+		17536DEF189564410067B71A /* DeletePersonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeletePersonViewController.xib; sourceTree = "<group>"; };
 		F627DC8C188F8CA3005B392F /* HomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F627DC8F188F8CA3005B392F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F627DC91188F8CA3005B392F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -132,6 +137,9 @@
 				F627DC96188F8CA3005B392F /* Supporting Files */,
 				F6E5AE9618924FC0001E6A91 /* Person.h */,
 				F6E5AE9718924FC0001E6A91 /* Person.m */,
+				17536DED189564410067B71A /* DeletePersonViewController.h */,
+				17536DEE189564410067B71A /* DeletePersonViewController.m */,
+				17536DEF189564410067B71A /* DeletePersonViewController.xib */,
 			);
 			path = HomeWork;
 			sourceTree = "<group>";
@@ -244,6 +252,7 @@
 				F627DCAB188F8CA3005B392F /* Images.xcassets in Resources */,
 				F627DC9A188F8CA3005B392F /* InfoPlist.strings in Resources */,
 				F6358E8A1890BDBD00040C69 /* AddPersonViewController.xib in Resources */,
+				17536DF1189564410067B71A /* DeletePersonViewController.xib in Resources */,
 				F6358E8F1890BDE800040C69 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +276,7 @@
 				F627DC9C188F8CA3005B392F /* main.m in Sources */,
 				F6E5AE9818924FC0001E6A91 /* Person.m in Sources */,
 				F6358E891890BDBD00040C69 /* AddPersonViewController.m in Sources */,
+				17536DF0189564410067B71A /* DeletePersonViewController.m in Sources */,
 				F6358E8E1890BDE800040C69 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

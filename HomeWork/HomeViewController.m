@@ -8,6 +8,7 @@
 
 #import "HomeViewController.h"
 #import "AddPersonViewController.h"
+#import "DeletePersonViewController.h"
 #import "Person.h"
 
 @interface HomeViewController ()<AddPersonViewControllerDelegate>
@@ -71,9 +72,16 @@
     
     Person *temporaryPerson = _fullNamePerson[indexPath.row];
     cell.textLabel.text = [temporaryPerson fullName];
-
+    
     return cell;
     
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    DeletePersonViewController *deletePersonVC = [[DeletePersonViewController alloc] initWithNibName:@"DeletePersonViewController" bundle:nil];
+    
+    [self.navigationController presentViewController:deletePersonVC animated:YES completion:nil];
 }
 
 
