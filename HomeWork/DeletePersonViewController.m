@@ -9,7 +9,7 @@
 #import "DeletePersonViewController.h"
 #import "Person.h"
 
-@interface DeletePersonViewController ()
+@interface DeletePersonViewController ()<UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
 @end
 
@@ -31,7 +31,9 @@
     
    _nameTextField.text = _detailPerson.nameText;
    _lastNameTextFiled.text  = _detailPerson.lastNameText;
-    _photoPerson.image = _detailPerson.myPhoto;
+   _photoPerson.image = _detailPerson.myPhoto;
+    
+    [_editPhotoButton setBackgroundImage:_detailPerson.myPhoto forState:UIControlStateNormal];
     
 }
 
@@ -60,9 +62,29 @@
     
     _detailPerson.nameText = _nameTextField.text;
     _detailPerson.lastNameText = _lastNameTextFiled.text;
+    _detailPerson.myPhoto = _photoPerson.image;
     
     [self.delegate deletePersonViewController:self editPerson:_detailPerson];
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
+- (IBAction)editPhoto:(id)sender {
+    
+    UIImagePickerController *pickerController = [[UIImagePickerController alloc]
+                                                 init];
+    pickerController.delegate = self;
+    [self presentViewController:pickerController animated:YES completion:nil];
+    
+}
+
+- (void) imagePickerController:(UIImagePickerController *)picker
+         didFinishPickingImage:(UIImage *)image
+                   editingInfo:(NSDictionary *)editingInfo
+{
+    self.photoPerson.image = image;
+    [_editPhotoButton setBackgroundImage:image forState:UIControlStateNormal];
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 @end

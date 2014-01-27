@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DeletePersonViewController">
             <connections>
+                <outlet property="editPhotoButton" destination="jAC-Qs-ecv" id="Ubh-J2-u8J"/>
                 <outlet property="lastNameTextFiled" destination="STi-wi-mm5" id="raY-jS-V0n"/>
                 <outlet property="nameTextField" destination="T8T-OS-a6M" id="cK4-YE-McN"/>
                 <outlet property="photoPerson" destination="EaY-vg-Y5u" id="fM7-hc-roe"/>
@@ -74,9 +75,19 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EaY-vg-Y5u">
-                    <rect key="frame" x="44" y="95" width="240" height="128"/>
+                    <rect key="frame" x="151" y="460" width="52" height="54"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jAC-Qs-ecv">
+                    <rect key="frame" x="69" y="91" width="193" height="125"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="editPhoto:" destination="-1" eventType="touchUpInside" id="T9b-Ch-PVl"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>

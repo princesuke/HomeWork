@@ -30,8 +30,10 @@
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *lastNameTextFiled;
 @property (weak, nonatomic) IBOutlet UIImageView *photoPerson;
+@property (weak, nonatomic) IBOutlet UIButton *editPhotoButton;
 
 - (IBAction)deletePersonSubmit:(id)sender;
 - (IBAction)closeButton:(id)sender;
 - (IBAction)editPerson:(id)sender;
+- (IBAction)editPhoto:(id)sender;
 @end
