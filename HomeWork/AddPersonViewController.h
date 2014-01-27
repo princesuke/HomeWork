@@ -24,7 +24,9 @@
 @property (weak, nonatomic) IBOutlet UITextField *lastNamePerson;
 
 @property (nonatomic, weak) id<AddPersonViewControllerDelegate> delegate;
+@property (weak, nonatomic) IBOutlet UIImageView *photoPerson;
 
 - (IBAction)submitPerson:(id)sender;
+- (IBAction)takePhoto:(id)sender;
 
 @end

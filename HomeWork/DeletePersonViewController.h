@@ -29,6 +29,7 @@
 @property (nonatomic, weak) id<DeletePersonViewControllerDelegate> delegate;
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *lastNameTextFiled;
+@property (weak, nonatomic) IBOutlet UIImageView *photoPerson;
 
 - (IBAction)deletePersonSubmit:(id)sender;
 - (IBAction)closeButton:(id)sender;

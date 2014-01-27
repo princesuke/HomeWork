@@ -72,6 +72,7 @@
     
     Person *temporaryPerson = _fullNamePerson[indexPath.row];
     cell.textLabel.text = [temporaryPerson fullName];
+    cell.imageView.image = temporaryPerson.myPhoto;
     
     return cell;
     

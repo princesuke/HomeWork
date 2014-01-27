@@ -12,6 +12,7 @@
 
 @property (strong, nonatomic) NSString *nameText;
 @property (strong, nonatomic) NSString *lastNameText;
+@property (weak, nonatomic) IBOutlet UIImage *myPhoto;
 
 -(NSString *)fullName;
 

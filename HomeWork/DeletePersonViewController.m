@@ -31,6 +31,7 @@
     
    _nameTextField.text = _detailPerson.nameText;
    _lastNameTextFiled.text  = _detailPerson.lastNameText;
+    _photoPerson.image = _detailPerson.myPhoto;
     
 }
 
