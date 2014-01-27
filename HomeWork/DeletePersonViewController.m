@@ -28,26 +28,32 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-   // Person *temporaryPerson = _fullNamePerson[0];
-    _namePersonLabel.text =  @"aaa";
-    _lastNamePersonLabel.text = @"bb";
     
-    
-    
-//    UIBarButtonItem *delButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(canclePerson:)];
-//	self.navigationItem.rightBarButtonItem = delButton;
-    
-}
+   _namePersonLabel.text = _detailPerson.nameText;
+   _lastNamePersonLabel.text  = _detailPerson.lastNameText;
 
-- (void)canclePerson:(id)sender
-{
-    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+    
+   
+    
     // Dispose of any resources that can be recreated.
+}
+
+
+- (IBAction)deletePersonSubmit:(id)sender {
+//
+     [self.delegate deletePersonViewController:self removePerson:_detailPerson];
+     [self dismissViewControllerAnimated:YES completion:nil];
+    
+}
+
+- (IBAction)closeButton:(id)sender {
+   [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

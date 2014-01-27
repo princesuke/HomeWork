@@ -13,4 +13,5 @@
 @property (weak, nonatomic) IBOutlet UITableView *personTable;
 @property (copy, nonatomic) NSMutableArray *fullNamePerson;
 
+
 @end

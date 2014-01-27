@@ -11,7 +11,7 @@
 #import "DeletePersonViewController.h"
 #import "Person.h"
 
-@interface HomeViewController ()<AddPersonViewControllerDelegate>
+@interface HomeViewController ()<AddPersonViewControllerDelegate, DeletePersonViewControllerDelegate>
 
 @end
 
@@ -81,6 +81,14 @@
 {
     DeletePersonViewController *deletePersonVC = [[DeletePersonViewController alloc] initWithNibName:@"DeletePersonViewController" bundle:nil];
     
+    // = _fullNamePerson[indexPath.row];
+    deletePersonVC.detailPerson = _fullNamePerson[indexPath.row];
+//    deletePersonVC.indexPathForSelectedRow = indexPath;
+    deletePersonVC.delegate = self;
+
+   // [self.delegate HomeViewController:self gotPerson:temporaryPerson];
+    
+    
     [self.navigationController presentViewController:deletePersonVC animated:YES completion:nil];
 }
 
@@ -93,6 +101,12 @@
 
 }
 
+-(void)deletePersonViewController:(DeletePersonViewController *)deletePersonVC removePerson:(Person *)delelePerson
+{
+   // NSLog(@"aaa %d",indexPathForSelectedRow.row);
+    [_fullNamePerson removeObject:delelePerson];
+    [self.personTable reloadData];
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -103,7 +117,7 @@
 
 - (void)AddPersonViewController:(AddPersonViewController *)addPersonVC gotPerson:(Person *)namePerson
 {
- 
+    
     [_fullNamePerson addObject:namePerson];
     
     [self.personTable reloadData];
