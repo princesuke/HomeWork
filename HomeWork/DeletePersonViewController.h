@@ -14,6 +14,7 @@
 @protocol DeletePersonViewControllerDelegate <NSObject>
 
 - (void)deletePersonViewController:(DeletePersonViewController *)deletePersonVC removePerson:(Person *)delelePerson;
+- (void)deletePersonViewController:(DeletePersonViewController *)deletePersonVC editPerson:(Person *)editPerson;
 
 @end
 
@@ -26,7 +27,10 @@
 @property (nonatomic, assign) Person *deletePersonIndex;
 
 @property (nonatomic, weak) id<DeletePersonViewControllerDelegate> delegate;
+@property (weak, nonatomic) IBOutlet UITextField *nameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *lastNameTextFiled;
 
 - (IBAction)deletePersonSubmit:(id)sender;
 - (IBAction)closeButton:(id)sender;
+- (IBAction)editPerson:(id)sender;
 @end

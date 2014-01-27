@@ -29,9 +29,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-   _namePersonLabel.text = _detailPerson.nameText;
-   _lastNamePersonLabel.text  = _detailPerson.lastNameText;
-
+   _nameTextField.text = _detailPerson.nameText;
+   _lastNameTextFiled.text  = _detailPerson.lastNameText;
     
 }
 
@@ -54,6 +53,15 @@
 
 - (IBAction)closeButton:(id)sender {
    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)editPerson:(id)sender {
+    
+    _detailPerson.nameText = _nameTextField.text;
+    _detailPerson.lastNameText = _lastNameTextFiled.text;
+    
+    [self.delegate deletePersonViewController:self editPerson:_detailPerson];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

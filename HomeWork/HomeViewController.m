@@ -108,6 +108,11 @@
     [self.personTable reloadData];
 }
 
+-(void)deletePersonViewController:(DeletePersonViewController *)deletePersonVC editPerson:(Person *)editPerson
+{
+    [self.personTable reloadData];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
